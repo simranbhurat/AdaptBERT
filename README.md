@@ -1,7 +1,7 @@
 # AdaptBERT: Domain Adaptation for Learning Technological Classes of Defensive Publications
 
 ## Overview
-AdaptBERT is a transfer learning model designed to predict Cooperative Patent Classification (CPC) classes for research disclosures by leveraging information from patent data, even in the absence of labelled data for research disclosures. We formulate this as a few-shot multiclass classification problem.
+AdaptBERT is a transfer learning model designed to predict Cooperative Patent Classification (CPC) classes for research disclosures by leveraging information from patent data, even in the absence of labelled data for research disclosures.
 
 ## Model Architecture
 - We employ a pre-trained BERT (Bidirectional Encoder Representations from Transformers) base uncased model provided by Hugging Face to encode textual information effectively.
