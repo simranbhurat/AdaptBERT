@@ -14,8 +14,7 @@ AdaptBERT is a transfer learning model designed to predict Cooperative Patent Cl
 <img width="1200" alt="Screenshot 2023-07-26 at 19 36 10" src="https://github.com/simranbhurat/Thesis/assets/44201011/a6c7a318-23f6-43d7-a73b-3879b7f2df4d">
 
 
-## Domain Adaptation on Target Data
-- Unlabeled research disclosure data is used as the target data for Domain Adaptation.
+### Domain Adaptation 
 - The pre-trained BERT classifier processes the input text and generates a hidden state representation for the research disclosures.
 - We perform a maximum mean discrepancy (MMD) calculation to align the hidden state representations from both the patent and research disclosure data.
 - By computing gradients and applying backpropagation, we update the weights of the hidden layers, allowing the model to learn from both labelled source data and unlabeled target data.
