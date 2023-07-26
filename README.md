@@ -9,15 +9,11 @@ AdaptBERT is a transfer learning model designed to predict Cooperative Patent Cl
 - A pooling operation is applied in BERT to obtain a condensed representation of the entire input sequence, using the [CLS] token as the representative token for pooling.
 - The pooled output is concatenated with metadata(year of publication) to create a fused representation, which undergoes normalization to standardize the input for subsequent layers.
 - The data flows through two hidden layers, allowing the model to learn and represent the underlying patterns and relationships in the patent data.
-- A classifier produces logit scores, representing the model's confidence for each possible CPC class.
 
 <img width="1200" alt="Screenshot 2023-07-26 at 19 36 10" src="https://github.com/simranbhurat/Thesis/assets/44201011/a6c7a318-23f6-43d7-a73b-3879b7f2df4d">
 
-
-### Domain Adaptation 
-- The pre-trained BERT classifier processes the input text and generates a hidden state representation for the research disclosures.
+- The pre-trained BERT classifier processes the input text and generates a hidden state representation for the research disclosures and Patents.
 - We perform a maximum mean discrepancy (MMD) calculation to align the hidden state representations from both the patent and research disclosure data.
 - By computing gradients and applying backpropagation, we update the weights of the hidden layers, allowing the model to learn from both labelled source data and unlabeled target data.
-- Through this approach, the model is trained to predict CPC classes for research disclosures.
 
 Note: We named our model "AdaptBERT" to reflect its primary purpose and capability, which is domain adaptation using the BERT architecture.
