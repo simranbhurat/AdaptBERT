@@ -11,6 +11,7 @@ AdaptBERT is a transfer learning model designed to predict Cooperative Patent Cl
 - The data flows through two hidden layers, allowing the model to learn and represent the underlying patterns and relationships in the patent data.
 - A classifier produces logit scores, representing the model's confidence for each possible CPC class.
 
+<img width="290" alt="Screenshot 2023-07-26 at 19 34 12" src="https://github.com/simranbhurat/Thesis/assets/44201011/efab94b8-fbdc-4fc5-9734-470d7b608876">
 
 ## Domain Adaptation on Target Data
 - Unlabeled research disclosure data is used as the target data for Domain Adaptation.
