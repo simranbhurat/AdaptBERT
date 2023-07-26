@@ -7,9 +7,10 @@ AdaptBERT is a transfer learning model designed to predict Cooperative Patent Cl
 - We employ a pre-trained BERT (Bidirectional Encoder Representations from Transformers) base uncased model provided by Hugging Face to encode textual information effectively.
 - The BERT model generates contextualized word embeddings, capturing intricate meanings and relationships among words.
 - A pooling operation is applied in BERT to obtain a condensed representation of the entire input sequence, using the [CLS] token as the representative token for pooling.
-- The pooled output is concatenated with metadata and the year of publication to create a fused representation, which undergoes normalization to standardize the input for subsequent layers.
+- The pooled output is concatenated with metadata(year of publication) to create a fused representation, which undergoes normalization to standardize the input for subsequent layers.
 - The data flows through two hidden layers, allowing the model to learn and represent the underlying patterns and relationships in the patent data.
 - A classifier produces logit scores, representing the model's confidence for each possible CPC class.
+
 
 ## Domain Adaptation on Target Data
 - Unlabeled research disclosure data is used as the target data for Domain Adaptation.
