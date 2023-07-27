@@ -17,3 +17,11 @@ AdaptBERT is a transfer learning model designed to predict Cooperative Patent Cl
 - By computing gradients and applying backpropagation, we update the weights of the hidden layers, allowing the model to learn from both labelled source data and unlabeled target data.
 
 Note: We named our model "AdaptBERT" to reflect its primary purpose and capability, which is domain adaptation using the BERT architecture.
+
+1. **AdaptBERT.py**: This file contains the implementation of a BERT classifier with MMD (Maximum Mean Discrepancy) distance. The classifier is adapted to perform well on a target domain through domain adaptation techniques.
+
+2. **Data_Selection_from_paper.ipynb**: In this Jupyter notebook, we present an experiment that leverages Domain Adaptation with BERT-based Domain Classification and Data Selection. The experiment's approach is based on the findings of a specific paper (https://aclanthology.org/D19-6109/)
+   
+3. **Patent_RD_Visualisations.ipynb**: This Jupyter notebook contains visualizations generated from the Patent and Research Disclosures (RD) data. The visualizations are intended to provide insights into the characteristics of the data before and after applying Domain Adaptation.
+
+4. **t-SNE_plots**: This folder includes t-SNE plots that show visual representations of the RD and Patents data before and after Domain Adaptation. These plots are valuable for understanding the distribution and clustering of data points in the transformed feature space.
